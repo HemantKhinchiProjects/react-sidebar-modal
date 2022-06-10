@@ -4,7 +4,7 @@ const Sidebar = () => {
   return (
     <aside className={`sidebar show-sidebar`}>
       <div className="sidebar-header">
-        <i class="fa-brands fa-phoenix-framework logo"></i>
+        <i class="fa-brands fa-phoenix-framework logo"> Demo logo</i>
         <button className="close-btn">
           <i class="fa-solid fa-xmark"></i>
         </button>
