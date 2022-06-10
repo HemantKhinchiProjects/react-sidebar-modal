@@ -5,7 +5,7 @@ const Home = () => {
       <button className="sidebar-toggle">
         <i class="fa-solid fa-align-left"></i>
       </button>
-      <button className="btn">Modal</button>
+      <button className="btn">Show Modal</button>
     </main>
   );
 };
