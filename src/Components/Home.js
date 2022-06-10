@@ -1,5 +1,9 @@
 import React from 'react';
 const Home = () => {
-  return <div>Home Component</div>;
+  return (
+    <main>
+      <button className="sidebar-toggle"></button>
+    </main>
+  );
 };
 export default Home;
