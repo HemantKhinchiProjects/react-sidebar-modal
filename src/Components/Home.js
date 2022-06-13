@@ -1,7 +1,8 @@
-import React, { useContext } from 'react';
-import { AppContext } from '../Store/context';
+import React from 'react';
+import { useGlobalContext } from '../Store/context'; //costom Hooks
 const Home = () => {
-  const data = useContext(AppContext);
+  const data = useGlobalContext();
+  console.log(data);
   return (
     <main>
       <button className="sidebar-toggle">
