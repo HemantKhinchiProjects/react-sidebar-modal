@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { AppContext } from '../Store/context';
 const Home = () => {
+  const data = useContext(AppContext);
   return (
     <main>
       <button className="sidebar-toggle">
