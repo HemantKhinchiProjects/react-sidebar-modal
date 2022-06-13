@@ -1,11 +1,13 @@
 import React from 'react';
 import { social, links } from './data.js';
+import { useGlobalContext } from '../Store/context'; //costom Hooks
 const Sidebar = () => {
+  const { closeSidebar, isSidebarOpen } = useGlobalContext();
   return (
-    <aside className={`sidebar show-sidebar`}>
+    <aside className={`${isSidebarOpen ? 'sidebar show-sidebar' : 'sidebar'}`}>
       <div className="sidebar-header">
         <i class="fa-brands fa-phoenix-framework logo"> Demo logo</i>
-        <button className="close-btn">
+        <button className="close-btn" onClick={closeSidebar}>
           <i class="fa-solid fa-xmark"></i>
         </button>
       </div>
