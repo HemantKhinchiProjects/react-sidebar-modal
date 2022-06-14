@@ -11,7 +11,7 @@ const Model = () => {
       <div className="modal-container">
         <h3>Modal Content</h3>
         <button className="close-modal-btn" onClick={closeModal}>
-          <i class="fa-solid fa-xmark"></i>
+          <i className="fa-solid fa-xmark"></i>
         </button>
         <div className="main"></div>
       </div>
